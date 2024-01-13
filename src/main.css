@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    background-color: #141235;
+}
+
+a{
+    background-color: #141235;
+    border-radius: 4px;
+    color: #eee8e8;
+    padding: 10px;
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    color: #eee8e8;
+    text-decoration: none;
+}
+
+img{
+    width: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #bdbd2d;
+}
+
+.CardItem {
+    border-radius: 2rem;
+    background-color: #030314;
+    color: #bfbaba;
+    margin: 27px;
+    padding: 11px;
+    width: 261px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: inline-table;
+  }
+  
+  .Header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .ItemHeader {
+    margin: 0;
+    color: #e9d841;
+  }
+  
+  .ItemImg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .Info {
+    margin: 0;
+    color: #d4cece;
+  }
+  
+  .ItemFooter {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .Option {
+    color: #007bff;
+    text-decoration: none;
+  }
+  

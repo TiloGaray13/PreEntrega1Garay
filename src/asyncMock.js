@@ -10,16 +10,30 @@ const products = [
         price: 1350,
         img: img1,
         category: 'Chocolates',
-        stock: 23,
+        stock: 23
     },
-    { id: '2', name: 'Chocolate Milka Caramelo', price: 1350, img: img2, category: 'Chocolates', stock: 23 },
-    { id: '3', name: 'Chocolate Block', price: 1250, img: img3, category: 'Chocolates', stock: 23 },
+    {
+        id: '2',
+        name: 'Chocolate Milka Caramelo',
+        price: 1350,
+        img: img2,
+        category: 'Chocolates',
+        stock: 23
+    },
+    {
+        id: '3',
+        name: 'Chocolate Block',
+        price: 1250,
+        img: img3,
+        category: 'Chocolates',
+        stock: 23
+    },
 ];
 
 export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products);
+            resolve(products)
         }, 500);
     });
 };
@@ -27,16 +41,15 @@ export const getProducts = () => {
 export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.find((prod) => prod.id === productId));
+            resolve(products.find(prod => prod.id === productId));
         }, 500);
     });
 };
 
-export const getProductsByCategory = (category) => {
+export const getProductsByCategory = (categoryId) => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        const filteredProducts = products.filter((product) => product.category === category);
-        resolve(filteredProducts);
+        resolve (products.filter(prod => prod.category === categoryId));
       }, 500);
     });
   };
